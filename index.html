@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PTS</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body >
+  
+  <script src="index.js" async></script>
+  <script src="caman.js" async></script>
+  
+  
+  <!--Board bên trái-->
+  
+ 
+  <div class="board">
+    
+    <!--Chỉnh kênh màu-->
+    <div id="ColorChannel">
+      <p class="_title">kênh màu</p>
+      <!--Kênh màu red-->
+      <div class="Filters">
+        <div class="FilterName obj">
+          <p>red</p>
+        </div>
+        <div class="FilterSetting obj" >
+          <input type="range" class="range_slide ip" min="-100" max="100" step="1" value="0" name="red" name="red">
+        </div>
+        <input type="number"class="FilterValue obj valueBox"  min="-100" max="100" value="0" name="red">
+      </div>
+      <!--Kênh màu green-->
+      <div class="Filters">
+        <div class="FilterName obj">
+          <p>green</p>
+        </div>
+        <div class="FilterSetting obj" >
+          <input type="range" class="range_slide ip" min="-100" max="100" step="1" value="0" name="green">
+        </div>
+        <input type="number"class="FilterValue obj valueBox"  min="-100" max="100" value="0" name="green">
+      </div>
+      <!--Kênh màu blue-->
+      <div class="Filters">
+        <div class="FilterName obj">
+          <p>blue</p>
+        </div>
+
+        <div class="FilterSetting obj" >
+          <input type="range" class="range_slide ip" min="-100" max="100" step="1" value="0" name="blue">
+        </div>
+        <input type="number"class="FilterValue obj valueBox"  min="-100" max="100" value="0"name="blue" >
+      </div>
+      </div>
+      
+    </div>
+   
+
+    </div>
+
+      
+  </div>
+
+  <!--Ảnh cần chỉnh sửa-->
+  <canvas id="canvas"></canvas>
+  
+  <!--Chỉnh sửa các thông số-->
+  <!--Board bên phải-->
+  <div class="board">
+    <p class="_title">Các thông số cơ bản</p>
+    <div id="Filters">
+      
+      <!--Độ sáng-->
+      <div class="Filters">
+        <div class="FilterName obj">
+          <p>brightness</p>
+        </div>
+
+        <div class="FilterSetting obj" >
+          <input type="range" class="range_slide ip" min="-100" max="100" step="1" value="0" name="brightness">
+        </div>
+        <input type="number"class="FilterValue obj valueBox"  min="-100" max="100" value="0" name="brightness">
+      </div>
+      <!--Tương phản-->
+      <div class="Filters">
+        <div class="FilterName obj">
+          <p>contrast</p>
+        </div>
+
+        <div class="FilterSetting obj" >
+          <input type="range" class="range_slide ip" min="-100" max="100" step="1" value="0" name="contrast">
+        </div>
+        <input type="number"class="FilterValue obj valueBox"  min="-100" max="100" value="0" name="contrast">
+      </div>
+      <!--Độ Phơi sáng-->
+      <div class="Filters">
+        <div class="FilterName obj">
+          <p>exposure</p>
+        </div>
+
+        <div class="FilterSetting obj" >
+          <input type="range" class="range_slide ip" min="-100" max="100" step="1" value="0" name="exposure">
+        </div>
+        <input type="number"class="FilterValue obj valueBox"  min="-100" max="100" value="0" name="exposure">
+      </div>
+      <!--Độ nhiễu-->
+      <div class="Filters">
+        <div class="FilterName obj">
+          <p>noise</p>
+        </div>
+
+        <div class="FilterSetting obj" >
+          <input type="range" class="range_slide ip" min="0" max="100" step="1" value="0" name="noise">
+        </div>
+        <input type="number"class="FilterValue obj valueBox"  min="-100" max="100" value="0" name="noise">
+      </div>
+      <!--Hue-->
+      <div class="Filters">
+        <div class="FilterName obj">
+          <p>hue</p>
+        </div>
+
+        <div class="FilterSetting obj" >
+          <input type="range" class="range_slide ip" min="-100" max="100" step="1" value="0" name="hue">
+        </div>
+        <input type="number"class="FilterValue obj valueBox"  min="-100" max="100" value="0"name="hue" >
+      </div>
+      <!--Bão hoà-->
+      <div class="Filters">
+        <div class="FilterName obj">
+          <p>saturation</p>
+        </div>
+
+        <div class="FilterSetting obj" >
+          <input type="range" class="range_slide ip" min="-100" max="100" step="1" value="0" name="saturation">
+        </div>
+        <input type="number"class="FilterValue obj valueBox"  min="-100" max="100" value="0" name="saturation">
+      </div>
+      <!--Gamma-->
+      <div class="Filters">
+        <div class="FilterName obj">
+          <p>gamma</p>
+        </div>
+
+        <div class="FilterSetting obj" >
+          <input type="range" class="range_slide ip" min="-100" max="100" step="1" value="0" name="gamma">
+        </div>
+        <input type="number"class="FilterValue obj valueBox"  min="-100" max="100" value="0" name="gamma">
+      </div>
+      <!--Độ rung động (vibrance)-->
+      <div class="Filters">
+        <div class="FilterName obj">
+          <p>vibrance</p>
+        </div>
+
+        <div class="FilterSetting obj" >
+          <input type="range" class="range_slide ip" min="-100" max="100" step="1" value="0" name="vibrance">
+        </div>
+        <input type="number"class="FilterValue obj valueBox"  min="-100" max="100" value="0" name="vibrance">
+      </div>
+      <!--Đảo ngược màu ( invert)-->
+    </div>
+  </div>
+  <div class="custom-file-input" data-text="Select your file!">
+    <input name="custom-file-input"  type="file" class="custom-file-input" id="upload-file">
+  </div>
+  
+</body>
+</html>
